@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://fiddle.jshell.net/cmyker/ooxdL2vj/show/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+  
+
+  
+
+  <script type="text/javascript" src="./dummy.js"></script>
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="./result-light.css">
+  
+
+  
+    
+      <script type="text/javascript" src="./Chart.bundle.js"></script>
+    
+  
+
+  <style type="text/css">
+    
+  </style>
+
+  <title>Chart.js version 2 responsive doughnut with text inside by cmyker</title>
+
+  
+    
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+window.onload=function(){
+var data = {
+  labels: [
+    "Red",
+    "Blue",
+    "Yellow"
+  ],
+  datasets: [
+    {
+      data: [300, 50, 100],
+      backgroundColor: [
+        "#FF6384",
+        "#36A2EB",
+        "#FFCE56"
+      ],
+      hoverBackgroundColor: [
+        "#FF6384",
+        "#36A2EB",
+        "#FFCE56"
+      ]
+    }]
+};
+
+var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
+  type: 'doughnut',
+  data: data,
+  options: {
+  	responsive: true,
+    legend: {
+      display: false
+    }
+  }
+});
+
+Chart.pluginService.register({
+  beforeDraw: function(chart) {
+    var width = chart.chart.width,
+        height = chart.chart.height,
+        ctx = chart.chart.ctx;
+
+    ctx.restore();
+    var fontSize = (height / 114).toFixed(2);
+    ctx.font = fontSize + "em sans-serif";
+    ctx.textBaseline = "middle";
+
+    var text = "75%",
+        textX = Math.round((width - ctx.measureText(text).width) / 2),
+        textY = height / 2;
+
+    ctx.fillText(text, textX, textY);
+    ctx.save();
+  }
+});
+}//]]> 
+
+</script>
+
+  
+</head>
+
+<body><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./saved_resource(1).html"></iframe>
+  <canvas id="myChart" width="529" height="264" style="display: block; width: 529px; height: 264px;"></canvas>
+  
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "ooxdL2vj"
+    }], "*")
+  }
+</script>
+
+
+
+
+
+</body></html>

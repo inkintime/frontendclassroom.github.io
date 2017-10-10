@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Titillium Web', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+/*
+  =============
+  Header Styles
+  =============
+*/
+article > * {
+  opacity: 0;
+  position: relative;
+  top: 100px; }
+
+.intro {
+  width: 100%;
+  padding-bottom: 150px;
+  background-color: #86509c;
+  text-align: center; }
+  .intro .logo {
+    height: 36px;
+    width: 116px;
+    background: url("../assets/logo.png"); }
+  .intro section {
+    padding: 60px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    border: none;
+    margin: auto; }
+  .intro ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .intro li {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 5px 17px;
+    border-radius: 3px;
+    list-style: none; }
+    .intro li a {
+      color: #fff; }
+    .intro li:hover {
+      background-color: #fff; }
+      .intro li:hover a {
+        color: #86509c; }
+  .intro .current, .intro .current:hover {
+    background-color: #643a79; }
+    .intro .current:hover a {
+      color: #fff; }
+  .intro h1 {
+    padding: 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 54px; }
+  .intro .cta-work {
+    padding: 20px 80px;
+    background-color: #eb7d4c;
+    border-radius: 4px;
+    border-bottom: 4px solid #c76a41;
+    text-transform: uppercase;
+    color: #fff; }
+    .intro .cta-work:hover {
+      background-color: #f48f4c; }
+    .intro .cta-work:active {
+      background-color: #ce5b38;
+      border-color: #b14a35; }
+
+/*
+  ===========
+  Body Styles
+  ===========
+*/
+article.services, article.team, article.skills, article.portfolio, article.whatPeopleSay, article.contact, article.contactSites {
+  box-sizing: border-box;
+  padding: 120px 0px;
+  width: 100%;
+  background-color: #18c2a5; }
+  article.services h1, article.team h1, article.skills h1, article.portfolio h1, article.whatPeopleSay h1, article.contact h1, article.contactSites h1 {
+    padding: 0px 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 37px;
+    color: #fff;
+    text-transform: uppercase; }
+  article.services hr, article.team hr, article.skills hr, article.portfolio hr, article.whatPeopleSay hr, article.contact hr, article.contactSites hr {
+    height: 4px;
+    width: 80px;
+    margin: auto;
+    color: #fff;
+    background-color: #13a68c;
+    border: none; }
+  article.services h2, article.team h2, article.skills h2, article.portfolio h2, article.whatPeopleSay h2, article.contact h2, article.contactSites h2 {
+    padding: 0px 25px;
+    margin: auto;
+    text-align: center;
+    max-width: 600px;
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 300;
+    color: #fff;
+    border: none; }
+  article.services section, article.team section, article.skills section, article.portfolio section, article.whatPeopleSay section, article.contact section, article.contactSites section {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff; }
+    article.services section h3, article.team section h3, article.skills section h3, article.portfolio section h3, article.whatPeopleSay section h3, article.contact section h3, article.contactSites section h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 23px; }
+    article.services section div, article.team section div, article.skills section div, article.portfolio section div, article.whatPeopleSay section div, article.contact section div, article.contactSites section div {
+      text-align: center;
+      padding: 30px;
+      width: 260px;
+      box-sizing: border-box; }
+      article.services section div img, article.team section div img, article.skills section div img, article.portfolio section div img, article.whatPeopleSay section div img, article.contact section div img, article.contactSites section div img {
+        height: 125px;
+        margin-bottom: 50px; }
+    article.services section p, article.team section p, article.skills section p, article.portfolio section p, article.whatPeopleSay section p, article.contact section p, article.contactSites section p {
+      margin-top: 20px;
+      font-weight: 200; }
+
+article.team {
+  background-color: #e7f2f8; }
+  article.team h1 {
+    color: #3c4862; }
+  article.team hr {
+    background-color: #c8d8e5; }
+  article.team h2 {
+    color: #3c4862;
+    font-size: 17px; }
+  article.team section h3 {
+    color: #27283d; }
+  article.team section h4 {
+    color: #32bbe9;
+    font-weight: 300; }
+  article.team section p {
+    color: #27283d; }
+  article.team section .portrait {
+    height: 200px;
+    width: 200px;
+    background-color: #878787;
+    background-size: cover;
+    border-radius: 100%; }
+  article.team section div:nth-of-type(1) .portrait {
+    background-image: url("../assets/team1.jpg"); }
+  article.team section div:nth-of-type(2) .portrait {
+    background-image: url("../assets/team2.jpg"); }
+  article.team section div:nth-of-type(3) .portrait {
+    background-image: url("../assets/team3.jpg");
+    background-position: center; }
+  article.team section div:nth-of-type(4) .portrait {
+    background-image: url("../assets/team4.jpg"); }
+  article.team section .socialMediaWrap {
+    margin-top: 10px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  article.team section .socialMedia {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdd0df;
+    padding: 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%; }
+    article.team section .socialMedia:hover {
+      cursor: pointer;
+      background-color: #a4b6c3; }
+
+article.skills {
+  background-color: #fff; }
+  article.skills hr {
+    background-color: #dfe8ed; }
+  article.skills h1, article.skills h2, article.skills h3 {
+    color: #3c4862; }
+  article.skills h3 {
+    margin-top: 30px; }
+  article.skills section {
+    margin-top: -10px; }
+  article.skills section div {
+    padding: 0px; }
+    article.skills section div canvas {
+      box-sizing: border-box;
+      padding: 100px 50px 0px 50px; }
+
+article.portfolio {
+  background-color: #ffdc98; }
+  article.portfolio h1, article.portfolio h2, article.portfolio li, article.portfolio p {
+    color: #383838; }
+  article.portfolio hr {
+    background-color: #e5c27e; }
+  article.portfolio ul {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none; }
+  article.portfolio li {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 5px 20px;
+    margin: 5px;
+    background-color: #ebc884;
+    border-radius: 3px;
+    transition: 0.3s ease; }
+    article.portfolio li:hover {
+      background-color: #cba068; }
+    article.portfolio li.current, article.portfolio .intro li.current:hover, .intro article.portfolio li.current:hover {
+      background-color: #fff; }
+  article.portfolio section {
+    margin-top: 0px;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-around; }
+    article.portfolio section p {
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 400;
+      margin: 10px 0px 50px 0px; }
+    article.portfolio section div {
+      position: relative;
+      margin: 15px;
+      padding: 10px 0px 0px 0px;
+      width: 540px;
+      flex-wrap: wrap; }
+      article.portfolio section div img {
+        width: 540px;
+        height: 311px;
+        margin-bottom: 0px; }
+
+article.whatPeopleSay {
+  background-color: #d74681; }
+  article.whatPeopleSay hr {
+    background-color: #b73b6d; }
+  article.whatPeopleSay section {
+    margin-top: 100px;
+    max-width: 1000px;
+    justify-content: space-between; }
+    article.whatPeopleSay section .quoteWrap {
+      margin-bottom: 100px;
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 15px; }
+      article.whatPeopleSay section .quoteWrap p {
+        font-weight: 200;
+        font-size: 20px;
+        margin-top: 5px;
+        font-style: italic; }
+    article.whatPeopleSay section .portraitWrap {
+      display: inline;
+      padding: 0px;
+      height: 100px;
+      width: 100px; }
+    article.whatPeopleSay section .portrait {
+      margin-bottom: 40px;
+      padding: 0px;
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      background-color: #787878; }
+    article.whatPeopleSay section .quote {
+      text-align: left;
+      margin-left: 30px;
+      width: auto;
+      max-width: 320px;
+      display: inline;
+      padding: 0px; }
+      article.whatPeopleSay section .quote h3 {
+        margin-top: 15px;
+        font-weight: 400; }
+      article.whatPeopleSay section .quote h4 {
+        line-height: 10px;
+        color: #fcde98;
+        font-weight: 300; }
+
+article.contact {
+  background-color: #3c549a; }
+  article.contact hr {
+    background-color: #273a72; }
+  article.contact h2 {
+    width: auto;
+    max-width: none;
+    font-weight: 200; }
+  article.contact form {
+    padding: 50px 15px 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 860px; }
+  article.contact input, article.contact textarea {
+    font-weight: 200;
+    margin: 10px 0px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #273a72;
+    font-size: 15px;
+    color: #fff;
+    resize: vertical; }
+  article.contact button {
+    width: 300px;
+    height: 70px;
+    margin: auto;
+    background-color: #30bae8;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 40px; }
+    article.contact button:active {
+      background-color: #2d94e3; }
+  article.contact .yourName, article.contact .yourEmail {
+    width: 43%; }
+  article.contact .yourMessage {
+    height: 200px;
+    width: 100%; }
+  article.contact ::placeholder {
+    color: #fff; }
+
+article.contactSites {
+  background-color: #344b8e;
+  padding: 15px; }
+  article.contactSites > * {
+    opacity: 1;
+    top: 0px; }
+  article.contactSites .sitesWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    article.contactSites .sitesWrap h3 {
+      cursor: pointer;
+      font-size: 20px;
+      margin: 20px;
+      color: #fff; }
+      article.contactSites .sitesWrap h3:hover {
+        color: #e29b71; }
+    article.contactSites .sitesWrap .twitter {
+      color: #31b9e9; }
+
+/*
+  ================
+  Responsive Style
+  ================
+*/
+@media (max-width: 1040px) {
+  article.contact .yourName, article.contact .yourEmail {
+    width: 100%; }
+  article.services section, article.team section, article.skills section, article.portfolio section, article.whatPeopleSay section, article.contact section, article.contactSites section {
+    max-width: 700px; }
+  article.whatPeopleSay section {
+    max-width: 1140px;
+    justify-content: center; } }
+
+@media (max-width: 600px) {
+  .intro h1 {
+    margin-top: 90px; }
+  .intro section {
+    flex-direction: column; }
+  .intro ul {
+    margin-top: 20px; }
+  article.portfolio section div img {
+    width: 270px;
+    height: 155.5px; } }
